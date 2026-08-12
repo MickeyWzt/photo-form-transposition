@@ -1,76 +1,108 @@
 # Visual system
 
-## Analyze the source
+## Classify the source
 
-Describe the source in structural terms before naming a target:
+Describe the source structurally before naming a target. Select one dominant carrier type or `hybrid` when two are comparably important.
 
-- **Axis:** dominant horizontal, vertical, diagonal, radial, or curved direction
-- **Mass:** one body, paired masses, layered bands, scattered field, or central core
-- **Boundary:** hard edge, fog loss, reflected edge, shadow edge, ripple, or repeated contour
-- **Rhythm:** branches, waves, windows, light points, grain, steps, folds, or strata
-- **Depth:** flat projection, foreground/background separation, atmospheric recession, or translucent layers
-- **Mood:** quiet, buoyant, cold, tense, playful, monumental, fragile, or weightless
+| Type | Carried by | Typical strengths | Main risk |
+| --- | --- | --- | --- |
+| `mass-led` | landforms, cloud bodies, shadow masses, tonal blocks | volume, rest, enclosure, paired forms | forcing detailed anatomy into broad masses |
+| `flow-led` | water, fog, smoke, light, branches, grain | motion, trailing forms, dissolution, rhythm | losing target recognition in atmosphere |
+| `topology-led` | roads, rivers, seams, wires, horizons | axes, spines, hinges, loops, internal maps | treating surrounding texture as generic fill |
+| `hybrid` | two strong carrier types | layered roles and depth | too many competing transformations |
 
-Select only two to four carriers. Preserving everything produces visual noise.
+Also record axis, boundary behavior, rhythm, depth, and mood. Retain only two to four carriers; preserving everything produces noise.
 
-## Generate candidates from geometry
+## Find the keystone carrier
 
-Derive three to six candidates from the carriers. Consider biological, botanical, geological, atmospheric, and object-like forms, but do not fill a category quota. Examples are prompts for reasoning, not fixed mappings:
+Choose the single source feature capable of carrying the target's main axis, hinge, sweep, body curve, or structural spine. Examples:
 
-- a long axis plus repeated lateral marks may carry a wing, spine-like organism, branch form, or vessel;
-- paired shadow masses around a seam may carry an insect, bloom, mask, or two-lobed landform;
-- a tapering ridge with drifting cloud may carry a fin, wing, plume, shell fragment, or unnamed cold-climate form;
-- a circulating foam field may carry a ray-like body, vortex organism, tidal glyph, or floating membrane.
+- a winding road can become a midrib, stem, spine, or coiled path;
+- a waterfall can become a vertical body axis or trailing rhythm;
+- a dune skyline can become a resting back and folded head;
+- a ridge can become a wing sweep;
+- a seam or pole can become a central shaft.
 
-Prefer a candidate that feels inevitable from the photograph. Do not use rules such as `ocean = whale` or `sky = bird`.
+Reject a candidate with attractive textures but no credible keystone.
+
+## Generate and map candidates
+
+Derive three to six candidates from source geometry. Consider biological, botanical, geological, atmospheric, and object-like forms without filling a category quota or using rules such as `ocean = whale`.
+
+For every candidate, write a compact role map:
+
+| Source carrier | Target role | Preserved photographic property |
+| --- | --- | --- |
+| Keystone | main axis, hinge, sweep, or body curve | direction, width, depth, or surface identity |
+| Supporting carrier 1 | secondary mass or rhythm | texture, light, or layering |
+| Supporting carrier 2 | boundary, trailing form, or internal depth | motion or atmosphere |
+| Optional completion cue | one necessary edge or separation | derived color and direction |
+
+Do not select a target unless at least three roles are credible or one keystone plus two strong anchors can carry a subtle form.
 
 ## Score target fit
 
-Score each candidate from 0 to 2 on every positive criterion and subtract the invention cost:
+Score each positive criterion from 0 to 2, then subtract costs:
 
 | Criterion | Question |
 | --- | --- |
-| Structural fit | Can existing source structures carry at least three recognition anchors? |
-| Directional fit | Does the source's motion naturally support the target's gesture? |
-| Material continuity | Can source texture remain active rather than becoming decorative fill? |
-| Emotional fit | Does the target share the photograph's weight, quietness, speed, or tension? |
-| Environment continuity | Can two or three source elements cross the target boundary credibly? |
-| Thumbnail reading | Will the target register without an outline or caption? |
-| Invention cost | Subtract 0–3 for anatomy, symmetry, edges, or details absent from the source. |
+| Keystone strength | Does one source feature carry the target's decisive structure? |
+| Role mapping | Do at least three source regions perform distinct target functions? |
+| Directional fit | Does source motion support the target gesture? |
+| Material continuity | Does texture remain active rather than decorative fill? |
+| Emotional fit | Do source and target share weight, speed, quietness, or tension? |
+| Thumbnail reading | Will the target register without outline or caption? |
+| Completion cost | Subtract 0–3 for absent edges, anatomy, symmetry, or separations. |
+| Anatomy complexity | Subtract 0–3 when recognition needs several limbs, joints, facial parts, or vein systems. |
 
-Choose the highest-scoring candidate only if it has at least three natural anchors and an invention cost no greater than 1. If no candidate passes, use a less literal or unnamed archetypal form.
+Prefer candidates with completion cost no greater than 1. If none pass, choose a less literal or unnamed archetypal form. Ask: **Would this choice still feel reasonable without an explanation?**
 
-The decisive test is: **Would the choice still feel reasonable without an explanation?**
+## Choose the architecture
 
-## Set the recognition level
+### Contained
 
-- **Subtle:** roughly 50–65% of the form is perceptible; visual closure completes it.
-- **Balanced:** roughly 65–80% is perceptible; use this by default.
-- **Assertive:** roughly 80–90% is perceptible, but source texture must still dominate and one major boundary must remain open.
+Use when source regions already form a coherent internal map and the target benefits from an iconic reading. A mostly complete contour is allowed when:
 
-Create three or four anchors such as a tip, body axis, leading arc, paired mass, root, tail, joint, or repeated edge rhythm. Keep anchors legible; dissolve the rest selectively.
+- at least three source regions have distinct target roles;
+- internal photographic depth and direction remain coherent;
+- the form is not merely a prefabricated mask;
+- one or two small texture escapes may soften sticker-like edges.
 
-## Reconnect the environment
+### Permeable
 
-Use three spatial roles:
+Use when the source is a continuous field or surface such as wall shadow, fog, forest, water, or light. Require:
 
-1. **Recognition zones:** retain enough contrast to establish the target.
-2. **Dissolution zones:** let a major source texture break or cross the target boundary.
-3. **Echo field:** carry faint source-derived atmosphere into the negative space so the subject does not look pasted on.
+- roughly 65–80% target readability by default;
+- at least two credible boundary crossings;
+- the original field or surface to remain continuous through and around the form;
+- selected anchors to stay crisp while other zones return to the environment.
 
-Use two or three bridges, not a uniform halo. Valid bridges include fog, cloud, projected shadow, reflected light, water flow, dust, grain, forest rhythm, or repeated source fragments. They must follow the source's existing direction.
+### Gestural
 
-Do not fuse by reducing the entire subject's opacity. Keep selected anchors crisp while allowing other zones to merge with the field.
+Use when one dominant source motion can imply the target more convincingly than a stable perimeter. Require:
+
+- one continuous sweep, expansion, fall, or circulation to dominate;
+- three or four anchors without full anatomy;
+- trailing or distal zones to remain incomplete;
+- rejection when separately completed limbs or facial structures overtake the source motion.
+
+## Set recognition and completion
+
+- `subtle`: about 50–65% perceptible; visual closure does more work.
+- `balanced`: about 65–80% perceptible; default.
+- `assertive`: about 80–90% perceptible; source texture and role mapping must still dominate.
+
+Create three or four anchors such as tip, body axis, leading arc, paired mass, root, tail, hinge, or repeated edge rhythm.
+
+Set a completion budget before prompting:
+
+- `minimal` (0–5%): target arises almost entirely from source structure;
+- `restrained` (5–10%): allow a few derived edges, separations, or one taper;
+- `extended` (10–15%): use only when the user prioritizes immediate recognition; never add foreign imagery or detailed anatomy.
+
+Completion cues must inherit the source's color, material, and direction. Do not spend the budget on eyes, faces, realistic fur, vein diagrams, multiple joints, or decorative outlines.
 
 ## Budget effects
 
-Choose at most one primary grammar:
-
-- sectional slicing
-- controlled repetition
-- positional offset
-- frame echo
-- stepped or interrupted boundary
-
-Optionally add one supporting treatment such as fine grain, mild misregistration, or restrained print texture. Remove any effect that does not clarify structure, motion, or environmental continuity.
+Choose at most one primary grammar: sectional repositioning, directional continuation, controlled repetition, positional offset, frame echo, or interrupted boundary. Optionally add one supporting treatment such as fine grain, mild misregistration, or restrained print texture. Remove any effect that does not clarify role, motion, or continuity.
 

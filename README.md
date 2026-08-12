@@ -4,22 +4,37 @@ Turn one photograph into a restrained visual-transposition poster: a new form be
 
 照片借形转译：不是套滤镜、描边、剪影蒙版或普通双重曝光，而是从一张照片中提炼结构，再让这些结构自然形成新的视觉形象。
 
+## v1.1: source-led architectures
+
+Version 1.1 first identifies what actually organizes the photograph:
+
+- `mass-led` sources such as dunes, mountains, cloud banks, and large shadows;
+- `flow-led` sources such as waterfalls, fog, branches, light, and smoke;
+- `topology-led` sources such as roads, rivers, seams, wires, and paths;
+- `hybrid` sources in which two carrier types are equally decisive.
+
+It then selects a **keystone carrier** and maps the retained source regions to target roles before choosing one of three architectures: `contained`, `permeable`, or `gestural`. This keeps the target legible without assuming that every image needs an open or dissolving perimeter.
+
 ## Examples
 
-| Ocean to manta-like form | Tree shadow to moth | Mountain leaf with environment reconnection |
-| --- | --- | --- |
-| ![Ocean foam reorganized into a manta-like form](examples/ocean-manta.png) | ![Tree shadows reorganized into a moth form](examples/tree-shadow-moth.png) | ![Mountain and mist forming an environment-fused leaf](examples/mountain-leaf-environment-fused.png) |
+| Mass-led: dunes to resting fox | Flow-led: waterfall to jellyfish |
+| --- | --- |
+| ![Desert dunes performing the curled masses of a resting fox](examples/desert-dunes-sleeping-fox.png) | ![Waterfall and forest mist forming a permeable jellyfish](examples/forest-waterfall-jellyfish.png) |
+
+| Topology-led: road to leaf | Hybrid: mountain panorama to wing |
+| --- | --- |
+| ![A winding forest road becoming the central vein of a leaf](examples/winding-forest-road-leaf.png) | ![Mountain ridge, lake, and cloud masses mapped into a restrained wing](examples/mountain-wing-role-map.png) |
 
 The examples are development tests, not bundled generation references. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for source-photo attribution.
 
 ## What the skill does
 
-- extracts two to four dominant visual carriers from the uploaded photograph;
-- compares several target forms instead of using fixed mappings such as `ocean = whale`;
-- builds recognition from three or four source-derived anchors;
-- reconnects the subject to the field through mist, shadow, light, water, grain, or other source material;
-- supports subtle, balanced, and assertive transposition strengths;
-- inspects the result for cutout, double-exposure, illustration, clutter, and forced-target failures.
+- classifies the photograph as mass-led, flow-led, topology-led, or hybrid;
+- selects one keystone source feature to carry the target's main axis, hinge, sweep, or spine;
+- compares several target forms through a carrier-to-form role map instead of fixed pairings such as `ocean = whale`;
+- selects a contained, permeable, or gestural architecture according to the source;
+- limits invented anatomy with a small completion budget;
+- inspects the result with shared and architecture-specific quality gates.
 
 The uploaded photograph remains the sole visual-content source by default.
 
@@ -63,9 +78,8 @@ The skill expects an image-generation or image-editing capability that accepts a
 
 ## Design principle
 
-The target should feel reasonable without explanation. A balanced result keeps roughly 65–80% of the form readable, uses three or four recognition anchors, and lets two or three source-derived structures cross or dissolve the boundary. Environmental fusion is selective directional continuity, not a uniform opacity fade.
+The target should feel reasonable without explanation. Source structures must perform distinct target roles rather than merely filling a pre-drawn mask. Boundary behavior is architecture-specific: a contained result may keep a coherent perimeter, a permeable result preserves environmental continuity across it, and a gestural result lets one source motion dominate incomplete anatomy.
 
 ## License
 
 The skill instructions and repository documentation are released under the [MIT License](LICENSE). Example-image source attribution is listed separately.
-

@@ -3,64 +3,87 @@
   "evals": [
     {
       "id": 1,
-      "prompt": "请把我上传的俯拍海浪照片做成一张安静、克制的照片借形海报，轮廓由你判断。",
-      "expected_output": "Inspect the source, identify two to four wave or foam carriers, compare multiple source-compatible target forms, and produce a balanced transposition with readable anchors and environmental continuity.",
-      "files": ["ocean-photo.jpg"],
+      "prompt": "请把这张沙丘照片做成一张安静的照片借形海报，轮廓由你判断。",
+      "expected_output": "Classify the source as mass-led, identify a dune ridge as the keystone, compare low-anatomy resting forms, and use a contained role map with a small completion budget.",
+      "files": ["desert-dunes.jpg"],
       "expectations": [
         "Uses the uploaded photo as the sole visual-content source",
-        "Selects the target from source geometry rather than a fixed ocean-to-animal mapping",
-        "Uses three or four recognition anchors and two or three source-derived environment bridges",
-        "Avoids a closed photo mask and ordinary double exposure"
+        "Classifies the source by carrier logic before choosing a target",
+        "Identifies a keystone dune mass and maps at least three source regions",
+        "Avoids eyes, paws, fur drawing, or other detailed anatomy"
       ]
     },
     {
       "id": 2,
-      "prompt": "把这张墙面树影转译成一只蝴蝶，但别画蝴蝶，也不要把照片硬塞进剪影。",
-      "expected_output": "Test the requested butterfly against the source, derive its axis and wing masses from photographed seams and shadows, and preserve projected-light behavior across incomplete boundaries.",
-      "files": ["tree-shadow.jpg"],
+      "prompt": "把森林瀑布转成一个像水母的形态，但还要看得出这是森林里的瀑布。",
+      "expected_output": "Use a flow-led permeable architecture in which waterfall curtains carry the target and forest material crosses selected boundaries without creating an underwater scene.",
+      "files": ["forest-waterfall.jpg"],
       "expectations": [
-        "Honors the requested target when at least three anchors exist",
-        "Builds recognition from photographed shadow structures",
-        "Keeps part of the boundary incomplete",
-        "Does not invent drawn wing veins, anatomy, or outlines"
+        "Uses the waterfall as the keystone flow",
+        "Selects the permeable architecture",
+        "Preserves continuous forest and waterfall identity",
+        "Creates at least two source-derived boundary crossings"
       ]
     },
     {
       "id": 3,
-      "prompt": "现在轮廓不错，但让雪山叶片再和周围环境融合一些。",
-      "expected_output": "Change only environment continuity: retain the useful recognition anchors while allowing fog, ridge, and forest rhythm to cross selected boundaries and echo faintly into the field.",
-      "files": ["mountain-leaf-draft.png"],
+      "prompt": "这张航拍林路适不适合做成叶片？适合的话直接做，不适合就换轮廓。",
+      "expected_output": "Test whether the real road can act as the leaf midrib and stem. Use a contained leaf only when the topology supplies the primary structure without invented vein diagrams.",
+      "files": ["winding-forest-road.jpg"],
       "expectations": [
-        "Treats the supplied draft as the edit target",
-        "Creates two or three directional bridges from source material",
-        "Keeps selected anchors crisp enough for recognition",
-        "Does not simulate fusion by uniformly lowering opacity"
+        "Classifies the source as topology-led",
+        "Tests the user's target instead of accepting it automatically",
+        "Maps the road to midrib and stem and canopy to blade masses",
+        "Does not invent a symmetrical botanical vein system"
       ]
     },
     {
       "id": 4,
-      "prompt": "这张照片看不出适合什么动物，你自由发挥做成照片转译作品。",
-      "expected_output": "Broaden candidate selection beyond animals, then choose a botanical, geological, atmospheric, object-like, or unnamed archetypal form that minimizes invention.",
-      "files": ["ambiguous-landscape.jpg"],
+      "prompt": "用雪山和森林做一个向上展开的单翼，不要画羽毛。",
+      "expected_output": "Use a hybrid gestural architecture: mountain peak as hinge, rising ridge as sweep, and forest bands as a restrained flight-feather rhythm.",
+      "files": ["cloud-mountain.jpg"],
       "expectations": [
-        "Does not force an animal target",
-        "Generates and scores multiple candidates",
-        "Rejects candidates requiring major invented anatomy",
-        "Chooses a form that feels reasonable without explanation"
+        "Identifies a source-derived hinge and dominant upward motion",
+        "Uses gestural architecture",
+        "Keeps source motion dominant over feather anatomy",
+        "Rejects a full bird or standalone feather"
       ]
     },
     {
       "id": 5,
-      "prompt": "用这张夜景灯光照片做一版轮廓很清晰的视觉转译海报，最好一眼能认出来。",
-      "expected_output": "Use assertive strength while retaining source texture, leaving at least one major boundary open, and preventing the result from becoming a sticker-like silhouette.",
-      "files": ["night-lights.jpg"],
+      "prompt": "这张海浪能不能变成一匹奔马？",
+      "expected_output": "Evaluate anatomy complexity and completion cost before proceeding. Prefer a less anatomical or more archetypal moving form when multiple finished limbs and facial structures would be required.",
+      "files": ["ocean-waves.jpg"],
       "expectations": [
-        "Uses assertive rather than fully closed recognition",
-        "Preserves source light rhythm and depth",
-        "Leaves one major source-derived dissolution zone",
-        "Avoids unrelated collage and decorative effects"
+        "Penalizes several independently completed limbs and facial parts",
+        "Does not assume motion match alone is sufficient",
+        "If proceeding, keeps the wave motion dominant and distal anatomy incomplete",
+        "Offers a lower-completion alternative when the requested target is forced"
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "现在轮廓不错，但让主体再和周围环境融合一些。",
+      "expected_output": "Inspect the chosen architecture first. Add boundary crossings for permeable work, small texture escapes for contained work, or stronger motion continuity for gestural work instead of applying one universal fusion recipe.",
+      "files": ["transposition-draft.png"],
+      "expectations": [
+        "Treats the supplied draft as the edit target",
+        "Diagnoses architecture before revising",
+        "Changes only the dominant continuity failure",
+        "Does not simulate fusion by uniformly lowering opacity"
+      ]
+    },
+    {
+      "id": 7,
+      "prompt": "这张照片看不出适合什么动物，你自由发挥做成视觉转译作品。",
+      "expected_output": "Broaden candidates beyond animals, classify the source, find a keystone, and select a low-completion biological, botanical, geological, atmospheric, object-like, or unnamed form.",
+      "files": ["ambiguous-landscape.jpg"],
+      "expectations": [
+        "Does not force an animal target",
+        "Generates and scores multiple candidates",
+        "Chooses an architecture based on the source",
+        "Selects a form that feels reasonable without explanation"
       ]
     }
   ]
 }
-

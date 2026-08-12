@@ -1,0 +1,4 @@
+interface:
+  display_name: "Photo Form Transposition"
+  short_description: "Turn a source photo into a fused visual-form poster"
+  default_prompt: "Use $photo-form-transposition to transform my uploaded photograph into a restrained visual-transposition poster."

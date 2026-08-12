@@ -1,0 +1,66 @@
+{
+  "skill_name": "photo-form-transposition",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "请把我上传的俯拍海浪照片做成一张安静、克制的照片借形海报，轮廓由你判断。",
+      "expected_output": "Inspect the source, identify two to four wave or foam carriers, compare multiple source-compatible target forms, and produce a balanced transposition with readable anchors and environmental continuity.",
+      "files": ["ocean-photo.jpg"],
+      "expectations": [
+        "Uses the uploaded photo as the sole visual-content source",
+        "Selects the target from source geometry rather than a fixed ocean-to-animal mapping",
+        "Uses three or four recognition anchors and two or three source-derived environment bridges",
+        "Avoids a closed photo mask and ordinary double exposure"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "把这张墙面树影转译成一只蝴蝶，但别画蝴蝶，也不要把照片硬塞进剪影。",
+      "expected_output": "Test the requested butterfly against the source, derive its axis and wing masses from photographed seams and shadows, and preserve projected-light behavior across incomplete boundaries.",
+      "files": ["tree-shadow.jpg"],
+      "expectations": [
+        "Honors the requested target when at least three anchors exist",
+        "Builds recognition from photographed shadow structures",
+        "Keeps part of the boundary incomplete",
+        "Does not invent drawn wing veins, anatomy, or outlines"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "现在轮廓不错，但让雪山叶片再和周围环境融合一些。",
+      "expected_output": "Change only environment continuity: retain the useful recognition anchors while allowing fog, ridge, and forest rhythm to cross selected boundaries and echo faintly into the field.",
+      "files": ["mountain-leaf-draft.png"],
+      "expectations": [
+        "Treats the supplied draft as the edit target",
+        "Creates two or three directional bridges from source material",
+        "Keeps selected anchors crisp enough for recognition",
+        "Does not simulate fusion by uniformly lowering opacity"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "这张照片看不出适合什么动物，你自由发挥做成照片转译作品。",
+      "expected_output": "Broaden candidate selection beyond animals, then choose a botanical, geological, atmospheric, object-like, or unnamed archetypal form that minimizes invention.",
+      "files": ["ambiguous-landscape.jpg"],
+      "expectations": [
+        "Does not force an animal target",
+        "Generates and scores multiple candidates",
+        "Rejects candidates requiring major invented anatomy",
+        "Chooses a form that feels reasonable without explanation"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "用这张夜景灯光照片做一版轮廓很清晰的视觉转译海报，最好一眼能认出来。",
+      "expected_output": "Use assertive strength while retaining source texture, leaving at least one major boundary open, and preventing the result from becoming a sticker-like silhouette.",
+      "files": ["night-lights.jpg"],
+      "expectations": [
+        "Uses assertive rather than fully closed recognition",
+        "Preserves source light rhythm and depth",
+        "Leaves one major source-derived dissolution zone",
+        "Avoids unrelated collage and decorative effects"
+      ]
+    }
+  ]
+}
+

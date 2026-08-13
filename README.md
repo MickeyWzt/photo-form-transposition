@@ -76,6 +76,16 @@ Use $photo-form-transposition to turn my uploaded ocean photograph into a quiet 
 
 The skill expects an image-generation or image-editing capability that accepts a source image.
 
+## Verify the package
+
+Run the standard-library regression checks before publishing changes:
+
+```powershell
+python -m unittest discover -s tests -v
+```
+
+The checks validate the installable folder layout, Skill frontmatter, eval metadata, and local Markdown links.
+
 ## Design principle
 
 The target should feel reasonable without explanation. Source structures must perform distinct target roles rather than merely filling a pre-drawn mask. Boundary behavior is architecture-specific: a contained result may keep a coherent perimeter, a permeable result preserves environmental continuity across it, and a gestural result lets one source motion dominate incomplete anatomy.
